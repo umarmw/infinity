@@ -79,8 +79,11 @@ dependencies yourself.
 + eslint-config-airbnb@18.2.1
 added 197 packages from 118 contributors and audited 245 packages in 42.383s
 ```
+# add .eslintrc.js
+npm install @typescript-eslint/eslint-plugin -D
+$ npm i -D @typescript-eslint/parser
 
-#add lint in package.json
+# add lint in package.json
 ```
 "lint:ts": "tsc --noEmit && eslint \"packages/**/*.{js,ts,tsx}\" --quiet --fix"
 ```
