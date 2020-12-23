@@ -255,3 +255,9 @@ npm i -D react-scripts
 add types.d.ts
 
 # add override/ tsconfig.build/.json
+
+add workspace
+"workspaces": [
+    "packages/*"
+  ],
+  

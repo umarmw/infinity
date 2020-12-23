@@ -5,8 +5,13 @@
     "lint:css": "stylelint \"./packages/**/*.tsx\"",
     "lint:ts": "tsc --noEmit && eslint \"packages/**/*.{js,ts,tsx}\" --quiet --fix",
     "storybook": "start-storybook -p 9009 -s public",
-    "test": "jest"
+    "test": "jest",
+    "prerelease": "lerna run build",
+    "release": "lerna publish"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
