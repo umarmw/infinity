@@ -48,6 +48,9 @@ npm WARN styled-components@5.2.1 requires a peer of react-dom@>= 16.8.0 but none
 added 48 packages from 89 contributors and audited 48 packages in 21.169s
 ```
 
+add type for : $ npm i -D @types/styled-components
+
+
 #add eslint
 ```
 $ npm i -D eslint eslint-config-airbnb eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks
@@ -241,3 +244,14 @@ $ npm i -D storybook @storybook/addon-storysource @storybook/addon-a11y @storybo
 # add dom
 npm i -D react-dom @types/react-dom
 
+# add npm i - D awesome-typescript-loader
+
+# add .storybook/main.js file
+
+# add react-scripts
+npm i -D react-scripts
+
+# types
+add types.d.ts
+
+# add override/ tsconfig.build/.json

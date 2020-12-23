@@ -49,5 +49,10 @@ module.exports = {
     'react/jsx-closing-tag-location': 0,
     'react/jsx-max-props-per-line': 0,
     'react/jsx-closing-bracket-location': 0,
+
+    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/no-var-requires': 0,
+    'no-use-before-define': 'off',
+    'import/prefer-default-export': 'off',
   },
 };

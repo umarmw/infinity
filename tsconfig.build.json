@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es6",
+        "skipLibCheck": true,
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "allowJs": false,
+        "sourceMap": false,
+        "resolveJsonModule": true,
+        "moduleResolution": "node",
+        "declaration": true,
+        "baseUrl": ".",
+        "paths": {
+            "@infinity-core/*": [
+                "packages/*/src"
+            ]
+        },
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "include": [
+        "./types.d.ts"
+    ]
+}
