@@ -3,7 +3,7 @@ import Styled from 'styled-components';
 
 export interface TagProps {
   name: string;
-  style: string;
+  style?: string;
 }
 
 const Tag: React.FC<TagProps> = ({ name, style }) => {

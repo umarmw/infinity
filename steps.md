@@ -260,4 +260,5 @@ add workspace
 "workspaces": [
     "packages/*"
   ],
-  
+
+#add 2nd component

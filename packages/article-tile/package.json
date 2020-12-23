@@ -1,0 +1,28 @@
+{
+    "name": "@infinity-core/article-tile",
+    "version": "0.0.1",
+    "author": "Umar Waliyullah <umar.mw@gmail.com>",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "npm run clean && npm run compile",
+        "clean": "rm -rf ./dist",
+        "compile": "tsc --project ./tsconfig.build.json",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.0",
+        "@types/styled-components": "^5.1.7",
+        "react": "^17.0.1",
+        "styled-components": "^5.2.1",
+        "typescript": "^4.1.3"
+    },
+    "peerDependencies": {
+        "react": "^17.0.1",
+        "typescript": "^4.1.3"
+    }
+}

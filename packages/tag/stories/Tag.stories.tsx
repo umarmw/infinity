@@ -23,7 +23,11 @@ export const ListsTag = () => {
   return (
     <>
       {TagData.tags.map((item, i) => (
-        <Tag name={text('Title', item.name as string)} style={text('Style', item.style as string)} />
+        <Tag
+          name={text('Title', item.name as string)}
+          style={text('Style', item.style as string)}
+          key={['t', i].join('')}
+        />
       ))}
     </>
   );
