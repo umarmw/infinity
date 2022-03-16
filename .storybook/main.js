@@ -15,12 +15,24 @@ module.exports = {
     '@storybook/addon-contexts/register',
     '@storybook/addon-actions',
     '@storybook/addon-links',
-    '@storybook/addon-knobs/register',
+    '@storybook/addon-essentials',
+    '@storybook/addon-controls',
     '@storybook/addon-notes/register',
     '@storybook/addon-viewport/register',
     '@storybook/addon-a11y/register',
     '@storybook/addon-storysource'
   ],
+
+  typescript: {
+    check: false,
+    checkOptions: {},
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
+    },
+  },
+
   webpackFinal: async (config, { configType }) => {
 
     

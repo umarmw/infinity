@@ -6,6 +6,10 @@ export interface ArticleTileProps {
   title: string;
   description: string;
   tags: Array<TagProps>;
+  button?:{
+    className?:string;
+    label?:string;
+  };
 }
 
 export interface TagProps {
@@ -13,12 +17,13 @@ export interface TagProps {
   style?: string;
 }
 
-const ArticleTile: React.FC<ArticleTileProps> = ({ title, description, tags }) => {
+const ArticleTile: React.FC<ArticleTileProps> = ({ title, description, tags, button }) => {
   return (
     <StyleWrapper className="article-tile">
       <h2>{title}</h2>
       <p>{description}</p>
       <div>{tags && tags.map((item, i) => <Tag name={item.name} key={['t', i].join('')} />)}</div>
+      <button className={button?.className}>{button?.label}</button>
     </StyleWrapper>
   );
 };
